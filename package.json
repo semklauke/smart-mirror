@@ -1,0 +1,27 @@
+{
+  "name": "smart-mirror",
+  "version": "1.0.0",
+  "description": "Smart Display for the imprtnat things",
+  "main": "main.js",
+  "dependencies": {
+    "cron": "^1.1.1",
+    "dav": "^1.7.8",
+    "ejs": "^2.5.2",
+    "express": "^4.14.0",
+    "http-auth": "^2.4.10",
+    "ical": "^0.5.0",
+    "ical.js": "^1.2.2",
+    "request": "^2.75.0",
+    "socket.io": "^1.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ".git"
+  },
+  "author": "Sem Klauke",
+  "license": "ISC"
+}

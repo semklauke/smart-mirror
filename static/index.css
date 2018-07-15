@@ -1,0 +1,300 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	background-color: black;
+	color: white;
+}
+
+#invis-payload {
+	display: none !important;
+}
+
+.scroller-table{
+	margin: 0px;
+	position: absolute;
+	top: -20px;
+	right: 0px;
+	
+}
+.scroller-span{
+	color: white;
+	font-size : 250px !important;
+	font-family: 'Lato', sans-serif !important;
+	font-weight: 300;
+	text-align: center !important;
+}
+
+td > div:not(.scroller) > span.scroller-span {
+	display: inline-block;
+	
+	position: relative;
+	top: -15px;
+	left: 10px;
+	
+}
+
+i.wi {
+	color: white;
+}
+
+
+#clock {
+	float: right;
+}
+
+#date {
+	margin: 0px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	opacity: 1;
+}
+
+#date > span {
+	position: relative;
+	display: inline-block;
+}
+
+#day-of-week {
+	font-size: 90px;
+	font-family: 'Lato', sans-serif !important;
+	font-weight: 700;
+	top: -10px;
+}
+
+#day-of-month {
+	font-size: 80px;
+	font-family: 'Lato', sans-serif !important;
+	font-weight: 400;
+	top: -35px;
+}
+
+#week-of-year {
+	font-size: 25px;
+	font-family: 'Lato', sans-serif !important;
+	font-weight: 300;
+	top: -47px;
+	
+}
+
+#weather-report {
+	width: 620px;
+	margin: 0px;
+	min-height: 20px;
+	position: absolute;
+	top: 225px;
+	right: 0px;
+}
+
+#wr-icon {
+	font-size: 110px;
+}
+.wi-double:last-child {
+	position: absolute;
+	left: -120px;
+}
+
+#wr-temp-icon {
+	position: relative;
+	top: -20px;
+	font-size: 75px;
+	left: 13px;
+}
+#wr-temp {
+	font-size: 75px;
+	position: relative;
+	font-family: 'Lato', sans-serif !important;
+	font-weight: 400;
+	left: 10px;
+	top: -20px;
+}
+
+#wr-temp-detail {
+	font-size: 30px !important;
+	font-family: 'Lato', sans-serif;
+	display: inline-block;
+	font-weight: 300;
+	padding-right: 5px;
+
+
+}
+
+#wr-hum-icon, #wr-hum {
+	display: none;
+}
+
+#wr-sun {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	display: inline-block;
+	position: absolute;
+	font-size: 40px;
+	top: 17px;
+	left: 330px;//334
+}
+
+#wr-sun-detail {
+	padding-left: 12px;
+}
+
+/*#wr-sun-detail::after {
+	content: 'Uhr';
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 12px;
+}*/
+
+#wr-wind {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	display: inline-block;
+	position: absolute;
+	font-size: 37px;
+	top: 17px;
+	left: 514px;//520
+}
+i.wi-small-craft-advisory {
+	position: relative;
+	top: -1px;
+}
+
+#wr-wind-detail {
+	padding-left: 5px;
+	padding-top: 3px;
+	font-size: 37px;
+}
+#wr-wind-detail::after {
+	content: 'm/s';
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+}
+
+#wr-desc {
+	font-size: 22px !important;
+	font-family: 'Lato', sans-serif;
+	display: inline-block;
+}
+
+#wr-detail-row {
+	display: inline-block;
+	position: absolute;
+	top: 65px;
+	right: 10px;
+	padding: 0px;
+	margin: 0px;
+	
+}
+
+#weather-forcast {
+	width: 620px;
+	margin: 0px;
+	min-height: 20px;
+	position: absolute;
+	top: 355px;
+	right: 0px;
+}
+
+.wf-item {
+	display: inline-block;
+	width: 16%;
+	text-align: center;
+	font-size: 35px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+
+}
+.wf-temp {
+	padding-left: 5px;
+}
+
+.wf-time {
+	display: inline-block;
+	font-size: 15px;
+	font-weight: 300;
+	position: relative;
+	top: -20px;
+	left: -6px;
+
+}
+
+#calendar {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	margin: 0px;
+}
+
+.cal-event {
+	
+	font-family: 'Lato', sans-serif;
+	
+}
+
+.cal-starttime {
+	font-size: 25px;
+	font-weight: 300;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+.cal-name {
+	margin-top: 0px;
+	padding-top: 0px;
+	font-size: 45px;
+	font-weight: 400;
+	position: relative;
+	top: -5px;
+}
+
+.cal-endtime {
+	/*display: inline-block;
+	float: right;*/
+}
+
+#alarm {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	margin: 0px;
+	opacity: 0;
+	transition-duration: ss;
+	-webkit-transition-duration: 2s;
+}
+
+#alarm img {
+	height: 22px;
+	width: 22px;
+
+}
+
+#alarm-time {
+	font-family: 'Lato', sans-serif;
+	font-style: 35px;
+	font-weight: 400;
+	padding-left: 0px;
+
+
+}
+
+#alarm-audio {
+	display: none;
+}
+
+#alarm.big {
+	transform-origin: left bottom;
+	-webkit-transform-origin: left bottom;
+	-webkit-transform: scale(5, 5);
+	transform: scale(5, 5);
+
+}
+
+
+
+
+
+
+
+
+
